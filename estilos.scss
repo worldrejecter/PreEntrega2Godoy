@@ -1,0 +1,58 @@
+﻿$color_1: #ffffff;
+$background-color_1: rgb(11, 8, 54);
+$background-color_2: #0ca3df;
+$background-img_1: url(Imagenes/imagenFondo.jpg);
+
+.body-index {
+	background: $background-img_1;
+	background-blend-mode: multiply;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.navbar-custom {
+	background-color: $background-color_1;
+}
+.navbar {
+	.navbar-nav {
+		.nav-link {
+			color: $color_1;
+			font-size: 1.1em;
+			&:hover {
+				color: $color_1;
+			}
+		}
+		.nav-item {
+			position: relative;
+			&::after {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
+				background-color: $background-color_2;
+				width: 0%;
+				content: "";
+				height: 4px;
+				transition: all 0.5s;
+			}
+			&:hover {
+				&::after {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+.select {
+	background: #0ca3df;
+}
+.footer-custom {
+	background-color: $background-color_1;
+}
+.h1-custom {
+	text-shadow: black 0.3em 0.3em 0.3em;
+}
+.h2-custom {
+	text-shadow: black 0.3em 0.3em 0.3em;
+}
