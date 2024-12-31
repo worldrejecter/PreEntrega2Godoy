@@ -7,12 +7,16 @@
 }
 
 .navbar-custom {
-  background-color: rgb(11, 8, 54);
+  background: rgb(20, 12, 122);
 }
 
 .navbar .navbar-nav .nav-link {
   color: #ffffff;
   font-size: 1.1em;
+}
+
+.offcanvas-body {
+  background: rgb(20, 12, 122); 
 }
 .navbar .navbar-nav .nav-link:hover {
   color: #ffffff;
